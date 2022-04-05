@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <meta charset=UTF-8>
+        <meta name="description" content="THIS IS A WEBSITE DISPLAYING MY SKILL-SET">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container" id="container1">
+            <h1 id="title">User Experience Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the website</p>
+        </div>
+        <form id="survey-form" action="">
+          <div class="container" id="container2">  
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your Email"
+                  required
+                />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">
+                    Age<span class="clue">(optional)</span>
+                </label>
+                <input 
+                    type="number" 
+                    name="age" 
+                    id="number" 
+                    min="10" 
+                    max="99" 
+                    class="form-control" 
+                    placeholder="Age" 
+                />
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current experience?</p>
+                <select id="dropdown" name="exp_quality" class="form-control" required>
+                  <option disabled selected value>Select one Option</option>
+                  <option value="awful">Awful</option>
+                  <option value="bad">Bad</option>
+                  <option value="meh">Meh!</option>
+                  <option value="satisfactory">Satisfactory</option>
+                  <option value="good">Good</option>
+                  <option value="excellent">Excellent!</option>
+                </select>    
+            </div>
+            <div class="form-group">
+                <p>Would you recommend this site to a friend?</p>
+                <label>
+                    <input 
+                        name="user-command"
+                        value="definitely"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                    >
+                    Definitely
+                </label>
+                <label>
+                    <input 
+                        name="user-command"
+                        value="maybe"
+                        type="radio"
+                        class="input-radio"
+                    >
+                    Maybe
+                </label>
+                <label>
+                    <input 
+                        name="user-command"
+                        value="not_sure"
+                        type="radio"
+                        class="input-radio"
+                    >
+                    Not Sure
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                  What is your favorite feature of my website?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                  <option disabled selected value>Select an option</option>
+                  <option value="color_scheme">Color Scheme</option>
+                  <option value="layout">Layout</option>
+                  <option value="design">Design</option>
+                  <option value="openSource">Open Source</option>
+                </select>
+              </div>  
+              
+              <div class="form-group">
+                <p>
+                  What would you like to see improved?
+                  <span class="clue">(Check all that apply)</span>
+                </p>
+          
+                <label
+                  ><input
+                    name="prefer"
+                    value="responsiveness"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Responsiveness</label
+                >
+                <label>
+                  <input
+                    name="prefer"
+                    value="connectivity"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Connectivity</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="presentation"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Presentation</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="simplicity"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Simplicity</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="open-source-community"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Open Source Community</label
+                >
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Enter your comment here..."
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Submit
+                </button>
+            </div>
+          </div>  
+        </form> 
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>    
